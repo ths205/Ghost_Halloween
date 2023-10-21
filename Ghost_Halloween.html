@@ -1,3 +1,4 @@
+<!--This  is a canvas  Drawing of a  Ghost-->
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,7 +30,7 @@ text-alignment: margin;
 var ghost = document.getElementById("ghost");
 
 var g_ctx = ghost.getContext("2d");
-
+<!--This  is code to create the ghost body-->
 g_ctx.beginPath();
 
 g_ctx.moveTo(150,500);
@@ -39,7 +40,7 @@ g_ctx.fillStyle="#F8F8FF";
 g_ctx.fill();
 
 g_ctx.closePath();
-
+<!--This is code to create the ghost eye-->
 var ghost_right_eye = document.getElementById("ghost");
 
 var g_right_eye_ctx = ghost_right_eye.getContext("2d");
@@ -51,7 +52,7 @@ g_right_eye_ctx.fillStyle='black';
 g_right_eye_ctx.fill();
 
 g_right_eye_ctx.closePath();
-
+<!--This is  code to create the ghost left eye-->
 var ghost_left_eye = document.getElementById("ghost");
 
 var g_left_eye_ctx = ghost_left_eye.getContext("2d");
